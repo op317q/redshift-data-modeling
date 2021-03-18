@@ -31,7 +31,18 @@ And below is an example of what a single song file, TRAABJL12903CDCF1A.json, loo
 
 `````
 
-{"num_songs": 1, "artist_id": "ARJIE2Y1187B994AB7", "artist_latitude": null, "artist_longitude": null, "artist_location": "", "artist_name": "Line Renaud", "song_id": "SOUPIRU12A6D4FA1E1", "title": "Der Kleine Dompfaff", "duration": 152.92036, "year": 0}
+{
+   "num_songs":1,
+   "artist_id":"ARJIE2Y1187B994AB7",
+   "artist_latitude":null,
+   "artist_longitude":null,
+   "artist_location":"",
+   "artist_name":"Line Renaud",
+   "song_id":"SOUPIRU12A6D4FA1E1",
+   "title":"Der Kleine Dompfaff",
+   "duration":152.92036,
+   "year":0
+}
 
 `````
 
@@ -45,6 +56,27 @@ The log files in the dataset you'll be working with are partitioned by year and 
 
 log_data/2018/11/2018-11-12-events.json
 log_data/2018/11/2018-11-13-events.json
+
+{
+  "artist": "Pavement",
+  "auth": "Logged In",
+  "firstName": "Sylvie",
+  "gender": "F",
+  "itemInSession": 0,
+  "lastName": "Cruz",
+  "length": 99.16036,
+  "level": "free",
+  "location": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+  "method": "PUT",
+  "page": "NextSong",
+  "registration": 1540266185796.0,
+  "sessionId": 345,
+  "song": "Mercy:The Laundromat",
+  "status": 200,
+  "ts": 1541990258796,
+  "userAgent": "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.77.4 (KHTML, like Gecko) Version/7.0.5 Safari/537.77.4\"",
+  "userId": "10"
+}
 
 `````
 
