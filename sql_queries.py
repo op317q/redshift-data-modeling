@@ -140,7 +140,7 @@ songplay_table_insert = ("""
            location,
            user_agent
     FROM staging_events e
-    JOIN staging_songs s ON (e.song = s.title AND e.artist = s.artist_name)
+    JOIN staging_songs s ON (e.song = s.title AND e.artist = s.artist_name AND e.length = s.duration)
 """)
 
 user_table_insert = ("""
@@ -151,7 +151,7 @@ user_table_insert = ("""
            gender,
            level
     FROM staging_events
-    WHERE user_id IS NOT NULL;
+    WHERE user_id IS NOT NULL AND page = 'NextSong';
 """)
 
 song_table_insert = ("""
